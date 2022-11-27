@@ -7,6 +7,10 @@
     publish = "public"
     node_bundler = "esbuild"
 
+[functions]
+  included_files = ["static/outputlim.json"]
+  node_bundler = "esbuild"
+
 [[redirects]]
     from = "/api/*"
     to = "/.netlify/functions/:splat"
